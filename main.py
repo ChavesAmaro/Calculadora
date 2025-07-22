@@ -34,7 +34,7 @@ if __name__ == "__main__":
             if math.isnan(resultado):
                 print("Erro! Escolha uma operação válida (+|-|*|/|**)")
             else:
-                print(f"O resultado é {resultado}")
+                print(f"\nO resultado é {resultado}")
             
         except ValueError:
             print('Dados inválidos! -> Tente novamente!')
@@ -46,7 +46,7 @@ if __name__ == "__main__":
             continue
         repetirOK = False
         while repetirOK == False:
-            repetir = input("Deseja fazer nova operação (s/n)").strip().lower()
+            repetir = input("\nDeseja fazer nova operação (s/n)").strip().lower()
             if repetir == 's':
                 repetirOK = True
                 continue
